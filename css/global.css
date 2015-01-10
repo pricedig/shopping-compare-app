@@ -1,0 +1,27 @@
+body {
+ margin:0px!important;
+}
+.header-content {
+  line-height:75px;
+  min-height:75px;
+  background:gray;
+}
+.main-content {
+  height:517px;
+}
+.footer-content {
+  background:#428bca;
+  line-height:75px;
+  min-height:75px;
+}
+.search-query {
+  height:49px;
+  width:699px;
+  font-size:18px;
+  box-sizing:border-box;
+  border:1px solid #ccc;
+}
+form {
+ padding-left:200px;
+ padding-top:50px;
+}
