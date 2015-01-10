@@ -1,13 +1,27 @@
 body {
  margin:0px!important;
+ background: #efefef; 
+ font-size: 12px; 
+ font-family: Arial,verdana; 
+ margin: 0; 
+ padding: 0; 
+ word-wrap: break-word;
+}
+.header {
+	position: fixed;
+	top:0;
+	z-index: 99999;
 }
 .header-content {
   line-height:75px;
-  min-height:75px;
-  background:gray;
+  height:75px;
+  background:#333333;
+  width:100%;
 }
 .main-content {
-  height:517px;
+  padding-bottom: 252px;
+  padding-top: 100px;
+  background: #D2E772;
 }
 .footer-content {
   background:#428bca;
@@ -25,3 +39,39 @@ form {
  padding-left:200px;
  padding-top:50px;
 }
+
+.footer-connect { 
+	clear: both; 
+	font-family: "Open Sans", Arial,verdana; 
+	text-align: center; 
+	font-size: 30px; 
+	color: #919191;
+	padding: 30px;  
+}
+
+/* Footer Classes */
+.footer { 
+  width: 100%; 
+  background: #333333; 
+  overflow: hidden; 
+  clear: both; 
+}
+.footer-wp { 
+	width: 1000px; 
+	margin: 0 auto; 
+	color: #fff; 
+	padding: 20px 0; 
+	overflow: hidden; 
+}
+.footer-wp a { color: #d2e772; text-decoration: none;  }
+.footer-wp a:hover { text-decoration: underline;  }
+.footer-lft { float: left; }
+.footer-rgt { float: right; }
+.footer-rgt a { padding: 0 5px; }
+.footer-connect { clear: both; font-family: "Open Sans", Arial,verdana; text-align: center; font-size: 30px; color: #919191; padding: 30px;  }
+.footer-connect a { width: 42px; height: 42px; display: inline-block; margin:  0 0 0 2px; text-decoration: none; }
+.footer-connect a:hover { -moz-opacity:.70; filter:alpha(opacity=70); opacity:.70; }
+.footer-connect a:first-child { margin-left: 16px; }
+.connecttwitter { background: url(../img/pb-icons-sprite.png) no-repeat 0px -709px; }
+.connectfacebook {  background: url(../img/pb-icons-sprite.png) no-repeat 0px -780px; }
+.connectgoogle { background: url(../img/pb-icons-sprite.png) no-repeat 0px -851px; }
