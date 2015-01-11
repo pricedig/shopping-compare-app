@@ -13,15 +13,41 @@ body {
 	z-index: 99999;
 }
 .header-content {
-  line-height:75px;
+  /* line-height:75px;  */
   height:75px;
-  background:#333333;
+  background:none repeat scroll 0% 0% rgb(0, 85, 119);
   width:100%;
+  vertical-align: middle;
 }
+
+.company-logo {
+	vertical-align: middle;
+	line-height: 75px;
+    color: #ffffff;
+    font-size: 28px;
+    padding-left: 50px;
+    float:left;
+}
+
+.contact-info {
+	display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    float: right;
+    vertical-align: middle;
+    line-height: 75px;
+    padding-right: 50px;
+}
+.contact {
+	display:inline-block;
+}
+.contact-cursor {
+	cursor: pointer;
+}
+
 .main-content {
-  padding-bottom: 252px;
+  padding-bottom: 403px;
   padding-top: 100px;
-  background: #D2E772;
 }
 .footer-content {
   background:#428bca;
@@ -29,15 +55,27 @@ body {
   min-height:75px;
 }
 .search-query {
-  height:49px;
+  height:50px;
   width:699px;
   font-size:18px;
   box-sizing:border-box;
   border:1px solid #ccc;
 }
 form {
- padding-left:200px;
- padding-top:50px;
+ padding-left: 235px;
+}
+
+.search-btn{
+	width: 100px;
+    height: 49px;
+    padding: 0px 0px;
+    border: 1px solid rgb(218, 124, 12);
+    background: -webkit-gradient(linear,left top,left bottom,from(#faa51a), to(#f47a20));
+    font-size: 18px sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 1px 1px #555;
+    margin-left: -104px;
 }
 
 .footer-connect { 
@@ -52,7 +90,7 @@ form {
 /* Footer Classes */
 .footer { 
   width: 100%; 
-  background: #333333; 
+  background: #003b63; 
   overflow: hidden; 
   clear: both; 
 }
