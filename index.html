@@ -13,13 +13,25 @@
 	<body>
 		<div>
 			<header class="header header-content">
-				<div class="company-logo"><span>PRICE DIG</span></div>
+				<div class="company-logo">
+					<span>PRICE DIG</span>
+				</div>
 				<div class="contact-info">
-					  <div class="contact contact-cursor"><span>LogIn</span></div>
-					  <div class="contact"><span>|</span></div>
-					  <div class="contact contact-cursor"><span>SignUp</span></div>
-					  <div class="contact"><span>|</span></div>
-					  <div class="contact contact-cursor"><span>Contact Us</span></div>
+					<div class="contact contact-cursor" onClick="login();">
+						<span>LogIn</span>
+					</div>
+					<div class="contact">
+						<span>|</span>
+					</div>
+					<div class="contact contact-cursor" onClick="signUp();">
+						<span>SignUp</span>
+					</div>
+					<div class="contact">
+						<span>|</span>
+					</div>
+					<div class="contact contact-cursor">
+						<span>Contact Us</span>
+					</div>
 				</div>
 			</header>
 			<div class="main-content">
@@ -34,23 +46,89 @@
 						</div>
 					</div>
 				</form>
+				<div class="hm-fetbox">
+					<div class="hm-text">
+						Featured Stores
+					</div>
+					<div class="hm-feture"></div>
+				</div>
+				<div class="hm-featprdct">
+					<ul>
+						<li>
+							<a title="flipkart" href="http://www.compareraja.in/coupons/flipkart-coupons "> <img src="images/flipkart.jpg" width="122" height="54" alt="flipkart"> </a>
+						</li>
+						<li>
+							<a title="amazon.in" href="http://www.compareraja.in/coupons/amazon-coupons"> <img src="http://static.compareraja.in/images/hm-icon1.png" width="122" height="54" alt="amazon.in"> </a>
+						</li>
+						<li>
+							<a title="snapdeal" href="http://www.compareraja.in/coupons/snapdeal-coupons"> <img src="http://static.compareraja.in/images/hm-icon10.png" width="122" height="54" alt="snapdeal" title=""> </a>
+						</li>
+						<li>
+							<a title="ebay.in" href="http://www.compareraja.in/coupons/ebayindia-coupons"> <img src="http://static.compareraja.in/images/hm-icon3.png" width="122" height="54" alt="ebay.in"> </a>
+						</li>
+						<li>
+							<a title="infibeam" href="http://www.compareraja.in/coupons/infibeam-coupons "> <img src="http://static.compareraja.in/images/hm-icon2.png" width="122" height="54" alt="infibeam"> </a>
+						</li>
+						<li>
+							<a title="homeshop18" href="http://www.compareraja.in/coupons/homeshop18-coupons "> <img src="http://static.compareraja.in/images/hm-icon4.png" width="122" height="54" alt="homeshop18"> </a>
+						</li>
+						<li>
+							<a title="indiatimes" href="http://www.compareraja.in/coupons/indiatimesshopping-coupons"> <img src="http://static.compareraja.in/images/hm-icon9.png" width="122" height="54" alt="indiatimes"> </a>
+						</li>
+						<li>
+							<a title="jabong" href="http://www.compareraja.in/coupons/jabong-coupons "> <img src="http://static.compareraja.in/images/hm-icon6.png" width="122" height="54" alt="jabong"> </a>
+						</li>
+						<li>
+							<a title="myntra" href="http://www.compareraja.in/coupons/myntra-coupons "> <img src="http://static.compareraja.in/images/hm-icon5.png" width="122" height="54" alt="myntra"> </a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			
+
 			<div class="footer">
 				<div class="footer-wp">
-					<div class="footer-lft">© 2015 
-						<a href="/">pricedig.net</a> 
+					<div class="footer-lft">
+						© 2015 <a href="/">pricedig.net</a>
 						| All rights reserved
 					</div>
-				   <div class="footer-rgt">
-				   	<a href="/">Home</a> . 
-				   	<a href="http://blog.pricesbolo.com">Blog</a> . 
-				   	<a href="/online/Contact_Us">Contact Us</a> . 
-				   	<a href="/online/Privacy_Policy">Privacy Policy</a> . 
-				   	<a href="/online/TermsandConditions">Terms &amp; Conditions</a>
-				   </div>
-			    </div>
-		   </div>
+					<div class="footer-rgt">
+						<a href="/">Home</a> . <a href="http://blog.pricesbolo.com">Blog</a> . <a href="/online/Contact_Us">Contact Us</a> . <a href="/online/Privacy_Policy">Privacy Policy</a> . <a href="/online/TermsandConditions">Terms &amp; Conditions</a>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<!-- Contact Form -->
+		<div id="contactdiv">
+			<form class="form" action="#" id="contact">
+				<img src="button_cancel.png" class="img" id="cancel"/>
+				<h3>Contact Form</h3>
+				<label>Name: <span>*</span></label>
+				<input type="text" id="name" placeholder="Name"/>
+				<label>Email: <span>*</span></label>
+				<input type="text" id="email" placeholder="Email"/>
+				<label>Contact No: <span>*</span></label>
+				<input type="text" id="contactno" placeholder="10 digit Mobile no."/>
+				<label>Message:</label>
+				<textarea id="message" placeholder="Message......."></textarea>
+				<input type="button" id="send" value="Send"/>
+				<input type="button" id="cancel" value="Cancel"/>
+				<br/>
+			</form>
+		</div>
+		<!--Login Form -->
+		<div id="logindiv">
+			<form class="form" action="#" id="login">
+				<img src="button_cancel.png" class="img" id="cancel"/>
+				<h3>Login Form</h3>
+				<label>Username : </label>
+				<input type="text" id="username" placeholder="Ex -john123"/>
+				<label>password : </label>
+				<input type="text" id="password" placeholder="************"/>
+				<input type="button" id="loginbtn" value="Login"/>
+				<input type="button" id="cancel" value="Cancel"/>
+			</form>
+		</div>
+
 	</body>
 </html>
