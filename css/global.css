@@ -46,7 +46,7 @@ body {
 }
 
 .main-content {
-	padding-bottom: 160px;
+	padding-bottom: 100px;
 	padding-top: 100px;
 }
 .footer-content {
@@ -84,6 +84,7 @@ form {
 	text-align: center;
 	height: 41px;
 	float: left;
+	padding-left:50px;
 }
 .hm-text {
 	width: 177px;
@@ -100,12 +101,14 @@ form {
 	width: 1240px;
 	border-top: 1px solid #dadada;
 	clear: both;
+	padding-left: 50px;
 }
 .hm-featprdct {
 	width: 1240px;
 	margin: 0 auto;
 	padding: 0 0 20px;
 	border-bottom: 1px solid #dadada;
+	margin-left:50px;
 	float: left;
 }
 .hm-featprdct ul {
@@ -307,4 +310,9 @@ textarea {
 }
 .amazon-site {
 	padding-top:50px;
+	padding-left:50px;
+}
+.flipkart-site {
+	padding-left:50px;
+	padding-top: 50px;
 }
