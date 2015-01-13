@@ -136,6 +136,8 @@ form {
 	background: #003b63;
 	overflow: hidden;
 	clear: both;
+	position:fixed;
+	bottom:0px;
 }
 .footer-wp {
 	width: 1000px;
@@ -315,4 +317,5 @@ textarea {
 .flipkart-site {
 	padding-left:50px;
 	padding-top: 50px;
+	padding-bottom:50px;
 }
