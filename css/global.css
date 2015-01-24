@@ -44,7 +44,12 @@ body {
 .contact-cursor {
 	cursor: pointer;
 }
-
+.contact-cursor a {
+	text-decoration: none;
+}
+.back a {
+	text-decoration: none;
+}
 .main-content {
 	padding-bottom: 100px;
 	padding-top: 100px;

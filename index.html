@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="priceDig">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,172 +7,14 @@
 		<meta name="description" content="pricedig.net - Compare Prices in India before you Buy. Check price in India of Mobiles, tables and other branded products. pricedig.net does dynamic price comparison and gets you the best prices across mobiles,tablets and other branded products.">
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="css/global.css">
-		<script src="js/jquery.js"></script>
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular/angular-resource.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="lib/jquery.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 	<body>
-		<div>
-			<header class="header header-content">
-				<div class="company-logo" onClick="home();">
-					<span>PRICE DIG</span>
-				</div>
-				<div class="contact-info">
-					<div class="contact contact-cursor" onClick="about();">
-						<span>About Us</span>
-					</div>
-					<!-- <div class="contact">
-					<span>|</span>
-					</div>
-					<div class="contact contact-cursor" onClick="signUp();">
-					<span>SignUp</span>
-					</div>
-					<div class="contact">
-					<span>|</span>
-					</div>
-					<div class="contact contact-cursor">
-					<span>Contact Us</span>
-					</div> -->
-				</div>
-			</header>
-
-			<div id="mainpd">
-				<div class="main-content">
-					<form class="search">
-						<div>
-							<div>
-								<h1>Start here, shop anywhere</h1>
-							</div>
-							<div class="search-submit" onClick="search();">
-								<input type="text" placeholder="What do you want to buy today?" class="search-query" name="field-keywords" autocomplete="off" autofocus="autofocus">
-								<input id="SearchBTN" class="search-btn" type="submit" value="Search">
-							</div>
-						</div>
-					</form>
-					<div class="hm-fetbox">
-						<div class="hm-text">
-							Featured Stores
-						</div>
-						<div class="hm-feture"></div>
-					</div>
-					<div class="hm-featprdct">
-						<ul>
-							<li>
-								<a title="flipkart" href="http://www.compareraja.in/coupons/flipkart-coupons "> <img src="images/flipkart.jpg" width="122" height="54" alt="flipkart"> </a>
-							</li>
-							<li>
-								<a title="amazon.in" href="http://www.compareraja.in/coupons/amazon-coupons"> <img src="http://static.compareraja.in/images/hm-icon1.png" width="122" height="54" alt="amazon.in"> </a>
-							</li>
-							<li>
-								<a title="snapdeal" href="http://www.compareraja.in/coupons/snapdeal-coupons"> <img src="http://static.compareraja.in/images/hm-icon10.png" width="122" height="54" alt="snapdeal" title=""> </a>
-							</li>
-							<li>
-								<a title="ebay.in" href="http://www.compareraja.in/coupons/ebayindia-coupons"> <img src="http://static.compareraja.in/images/hm-icon3.png" width="122" height="54" alt="ebay.in"> </a>
-							</li>
-							<li>
-								<a title="infibeam" href="http://www.compareraja.in/coupons/infibeam-coupons "> <img src="http://static.compareraja.in/images/hm-icon2.png" width="122" height="54" alt="infibeam"> </a>
-							</li>
-							<li>
-								<a title="homeshop18" href="http://www.compareraja.in/coupons/homeshop18-coupons "> <img src="http://static.compareraja.in/images/hm-icon4.png" width="122" height="54" alt="homeshop18"> </a>
-							</li>
-							<li>
-								<a title="indiatimes" href="http://www.compareraja.in/coupons/indiatimesshopping-coupons"> <img src="http://static.compareraja.in/images/hm-icon9.png" width="122" height="54" alt="indiatimes"> </a>
-							</li>
-							<li>
-								<a title="jabong" href="http://www.compareraja.in/coupons/jabong-coupons "> <img src="http://static.compareraja.in/images/hm-icon6.png" width="122" height="54" alt="jabong"> </a>
-							</li>
-							<li>
-								<a title="myntra" href="http://www.compareraja.in/coupons/myntra-coupons "> <img src="http://static.compareraja.in/images/hm-icon5.png" width="122" height="54" alt="myntra"> </a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="amazon-site">
-					<script charset="utf-8" type="text/javascript">
-						amzn_assoc_ad_type = "responsive_search_widget";
-						amzn_assoc_tracking_id = "pricedig-21";
-						amzn_assoc_link_id = "QNR5EAKOBPXXCWX6";
-						amzn_assoc_marketplace = "amazon";
-						amzn_assoc_region = "IN";
-						amzn_assoc_placement = "";
-						amzn_assoc_search_type = "search_widget";
-						amzn_assoc_width = "auto";
-						amzn_assoc_height = "auto";
-						amzn_assoc_default_search_category = "";
-						amzn_assoc_default_search_key = "";
-						amzn_assoc_theme = "light";
-						amzn_assoc_bg_color = "FFFFFF";
-					</script>
-					<script src="//z-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=IN"></script>
-				</div>
-
-				<div class="flipkart-site">
-					<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-142117129509655489' height=55 width=660 scrolling='no' frameborder=0></iframe>
-				</div>
-				<div class="flipkart-site">
-					<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-142124504136454748' frameborder=0 height=250 width=300></iframe>
-				</div>
-			</div>
-
-			<div id="aboutPD" class="jumbotron">
-				<div class="container">
-					<h3>What is <span class="price">priceDig?</h3><p></p>
-					<ul>
-						<li>
-							<span class="price">priceDig</span> helps you to <strong>compare prices before you buy</strong> a product.
-						</li>
-						<li>
-							<span class="price">priceDig</span> reduces the hassle of visiting multiple websites to <strong>compare prices before you buy</strong> a product.
-						</li>
-						<li>
-							<span class="price">priceDig</span> does not sell any products.
-						</li>
-						<li>
-							<span class="price">priceDig</span> does not own any of the products listed in this website.
-						</li>
-					</ul><p></p>
-				</div>
-				<div class="back" onClick="back();">
-					<span>Back</span>
-				</div>
-			</div>
-			<div class="footer">
-				<div class="footer-wp">
-					<div class="footer-lft">
-						© 2015 <a href="/">pricedig.net</a>
-						| All rights reserved
-					</div>
-					<div class="footer-rgt">
-						<a href="/">Home</a> . <a>Blog</a> . <a href="/online/Contact_Us">Contact Us</a> . <a href="/online/Privacy_Policy">Privacy Policy</a> . <a href="/online/TermsandConditions">Terms &amp; Conditions</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Contact Form -->
-			<div id="contactdiv">
-				<form class="form" action="#" id="contact">
-					<img src="button_cancel.png" class="img" id="cancel"/>
-					<h3>Contact Form</h3>
-					<label>Name: <span>*</span></label>
-					<input type="text" id="name" placeholder="Name"/>
-					<label>Email: <span>*</span></label>
-					<input type="text" id="email" placeholder="Email"/>
-					<label>Contact No: <span>*</span></label>
-					<input type="text" id="contactno" placeholder="10 digit Mobile no."/>
-					<label>Message:</label>
-					<textarea id="message" placeholder="Message......."></textarea>
-					<input type="button" id="send" value="Send"/>
-					<input type="button" id="cancel" value="Cancel"/>
-					<br/>
-				</form>
-			</div>
-		</div>
-		<div id="logindiv">
-			<form class="form" action="#" id="login">
-				<div class="circle-close" onClick="closePopUp();">
-					<span class="close">X</span>
-				</div>
-				<h3>Sorry for inconvenience. It is still Work In Progress.</h3>
-			</form>
-		</div>
+		 <div ng-view></div>
 	</body>
 </html>
