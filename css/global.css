@@ -47,8 +47,14 @@ body {
 .contact-cursor a {
 	text-decoration: none;
 }
+.contact-cursor span {
+	color: #fff;
+}
 .back a {
 	text-decoration: none;
+}
+.back  span{
+	color:#fff;
 }
 .main-content {
 	padding-bottom: 100px;
